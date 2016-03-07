@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>David's Technical Blog</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h3><a href="../index.html">David Walden</a></h3>
+    </header>
+
+    <section>
+      <h1>Arrays and Hashes</h1>
+        <h5>March 6, 2016</h5>
+
+        <h4 class="prompt">What are the differences between arrays and hashes? Why would you use one over the other?</h4>
+          <p>
+            Arrays and hashes are both structured like lists and every slot in the list acts like a variable. Each slot points to a particular object. Arrays are indexed with numbers that start with 0 and go up to the array’s length minus one. Hashes are collections of key-value pairs. You would use a hash if you don’t want to use numbers as indices or if you want to use unordered numeric indices. With a hash, you can use any Ruby object for a key or value.
+          </p>
+          <p>
+            To create an array use the following syntax:
+            <pre>
+              array = [value1, value2, value3]
+            </pre>
+          </p>
+          <p>
+            To create a hash use the following syntax:
+            <pre>
+              hash = { :key1 => value1, :key2 => value2, :key3 => value3 }
+            </pre>
+          </p>
+        <!--
+        supplemental material goes here
+        -->
+    </section>
+
+    <footer>
+      <h4><a href="index.html">Back</a></h4>
+    </footer>
+
+  </body>
+
+</html>
