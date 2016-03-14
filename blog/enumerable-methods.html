@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>David's Technical Blog</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h3><a href="../index.html">David Walden</a></h3>
+    </header>
+
+    <section>
+      <h1>Enumerable Methods</h1>
+        <h5>March 13, 2016</h5>
+
+        <h4 class="prompt">What does the <i>map</i> enumerable method do?</h4>
+          <p>The <i>map</i> enumerable method takes an object and a block and returns a new array with the results of running the block for each element. It leaves the original object unchanged unless you use <i>map!</i>. It’s different from <i>each</i> because <i>each</i> only performs the block for each element in the object, while <i>map</i> performs the block and returns an array containing the results.</p>
+          <p>
+            Here’s an example of how <i>map</i> works:
+            <pre>
+              [3, 5, 7, 8].map { |i| i+3 }    #=> [6, 8, 10, 11]
+            </pre>
+          </p>
+    </section>
+
+    <footer>
+      <h4><a href="index.html">Back</a></h4>
+    </footer>
+
+</html>
