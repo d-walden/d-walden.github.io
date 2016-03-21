@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>David's Technical Blog</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h3><a href="../index.html">David Walden</a></h3>
+    </header>
+
+    <section>
+      <h1>Ruby Classes</h1>
+        <h5>March 20, 2016</h5>
+
+        <h4 class="prompt">Instance Variables vs. Local Variables</h4>
+          <p>A Ruby class is a framework for creating new objects. Instance variables are accessible within a particular instance of a class and are created within the instance. All methods defined within a class have access to the instance variables of that class. Instance variables represent the attributes of real-world objects, while methods describe the behaviors. Ruby classes are used to bind new methods to objects or types of objects.
+          </p>
+          <p>An instance variable can be used anywhere within the instance of a class in which they are defined. Instance variables have an “@” at the beginning of the variable name. If you need to access a variable in multiple methods within a class, use an instance variable. If you only need to access the variable within a single method, use a local variable.
+          </p>
+          <p>Here’s an example of how you would use a local variable:
+            <pre>
+              class Example1
+                def initialize
+                  local_variable = "hello"
+                  puts local_variable
+                end
+              end
+            </pre>
+          </p>
+          <p>Here’s an example of how you would use an instance variable:
+            <pre>
+              class Example2
+                def initialize
+                  @instance_variable = "hello"
+                end
+
+                def greeting
+                  puts @instance_variable
+                end
+              end
+            </pre>
+          </p>
+    </section>
+
+    <footer>
+      <h4><a href="index.html">Back</a></h4>
+    </footer>
+  </body>
+
+</html>
