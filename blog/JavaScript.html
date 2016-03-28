@@ -18,13 +18,15 @@
         <h5>March 27, 2016</h5>
 
         <h4 class="prompt">Looping in Ruby vs. Looping in JavaScript</h4>
-          <p>Ruby has a number of easy-to-use methods that allow you iterate through data structures. <i>each, each_index</i> and <i>map</i> are a few examples of built in iterative methods in Ruby. These methods are an efficient and convenient alternative to using a while or for loop to work through arrays and hashes in Ruby.</p>
+          <p>
+            Ruby has a number of easy-to-use methods that allow you iterate through data structures. <i>each, each_index</i> and <i>map</i> are a few examples of built in iterative methods in Ruby. These methods are an efficient and convenient alternative to using a while or for loop to work through arrays and hashes in Ruby.
+          </p>
           <p>
           In Ruby,
             <pre>
             array = [‘x’, ‘y’, ‘z’]
             counter = 0
-            while counter < array.length
+            while counter &lt; array.length
               puts array[counter]
               counter += 1
             end
@@ -44,7 +46,7 @@
             <pre>
             var array = [‘x’, ‘y’, ‘z’];
             var counter = 0;
-            while (counter < array.length) {
+            while (counter &lt; array.length) {
               console.log(array[counter]);
               counter += 1;
             }
@@ -54,7 +56,7 @@
           can also be written as,
             <pre>
             var array = [‘x’, ‘y’, ‘z’];
-            for (var index = 0; index < array.length; index++) {
+            for (var index = 0; index &lt; array.length; index++) {
               console.log(array[index]);
             }
             </pre>
