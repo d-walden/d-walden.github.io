@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>David's Technical Blog</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h3><a href="../index.html">David Walden</a></h3>
+    </header>
+
+    <section>
+      <h1>JavaScript</h1>
+        <h5>March 27, 2016</h5>
+
+        <h4 class="prompt">Looping in Ruby vs. Looping in JavaScript</h4>
+          <p>Ruby has a number of easy-to-use methods that allow you iterate through data structures. <i>each, each_index</i> and <i>map</i> are a few examples of built in iterative methods in Ruby. These methods are an efficient and convenient alternative to using a while or for loop to work through arrays and hashes in Ruby.</p>
+          <p>
+          In Ruby,
+            <pre>
+            array = [‘x’, ‘y’, ‘z’]
+            counter = 0
+            while counter < array.length
+              puts array[counter]
+              counter += 1
+            end
+
+            </pre>
+          </p>
+          <p>
+          can also be written as
+            <pre>
+            array = [‘x’, ‘y’, ‘z’]
+            array.each {|value| puts value}
+            </pre>
+          This makes for much cleaner and simpler code.
+          </p>
+          <p>
+          In JavaScript,
+            <pre>
+            var array = [‘x’, ‘y’, ‘z’];
+            var counter = 0;
+            while (counter < array.length) {
+              console.log(array[counter]);
+              counter += 1;
+            }
+            </pre>
+          </p>
+          <p>
+          can also be written as,
+            <pre>
+            var array = [‘x’, ‘y’, ‘z’];
+            for (var index = 0; index < array.length; index++) {
+              console.log(array[index]);
+            }
+            </pre>
+          </p>
+          <p>
+            While this last block of code is easier to read and more compact than it’s while loop alternative, it’s not as concise as some of the iterative methods available in Ruby. Ruby has a broader range of possibilities when it comes to working through data structures. But whether you’re working in JavaScript or Ruby, you need to find the right balance between simplicity and readability.
+          </p>
+    </section>
+
+    <footer>
+      <h4><a href="index.html">Back</a></h4>
+    </footer>
+  </body>
+
+</html>
