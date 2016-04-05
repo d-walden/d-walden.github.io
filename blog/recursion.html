@@ -17,30 +17,25 @@
       <h1>Recursion</h1>
         <h5>April 4, 2016</h5>
 
-        <h4 class="prompt">*Work in progress</h4>
-          <p>A Ruby class is a framework for creating new objects. Instance variables are accessible within a particular instance of a class and are created within the instance. All methods defined within a class have access to the instance variables of that class. Instance variables represent the attributes of real-world objects, while methods describe the behaviors. Ruby classes are used to bind new methods to objects or types of objects.
+        <!-- <h4 class="prompt">*Work in progress</h4> -->
+          <p>Recursive functions are functions that call themselves. In order for them to work properly, you need to define a base case. The function should get closer to that base case with each recursive call. Most recursive procedures can be replaced with loops, but it’s good to understand how to recognize and implement them. Even if a loop can be used to solve a given problem, recursive solutions tend to be more elegant and sometimes faster.
           </p>
-          <p>An instance variable can be used anywhere within the instance of a class in which they are defined. Instance variables have an “@” at the beginning of the variable name. If you need to access a variable in multiple methods within a class, use an instance variable. If you only need to access the variable within a single method, use a local variable.
-          </p>
-          <p>Here’s an example of how you would use a local variable:
+          <p>Recursion:
             <pre>
-              class Example1
-                def initialize
-                  local_variable = "hello"
-                  puts local_variable
-                end
+              def countup(n)
+                return if n == 0
+                countup(n - 1)
+                puts n
               end
             </pre>
           </p>
-          <p>Here’s an example of how you would use an instance variable:
+          <p>Loop:
             <pre>
-              class Example2
-                def initialize
-                  @instance_variable = "hello"
-                end
-
-                def greeting
-                  puts @instance_variable
+              def countup(n)
+                counter = 1
+                while counter <= n
+                  puts counter
+                  counter += 1
                 end
               end
             </pre>
