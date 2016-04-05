@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>David's Projects</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h3><a href="../index.html">David Walden</a></h3>
+    </header>
+
+    <section>
+      <h1>Cheat Sheet</h1>
+        <h5>April 4, 2016</h5>
+
+        <h4 class="prompt">Git Workflow</h4>
+          <p></p>
+          <p>Navigate to master branch.
+          </p>
+          <p>Update master branch from remote master branch.
+            <pre>
+              git pull origin master
+            </pre>
+          </p>
+          <p>Create a new feature branch.
+            <pre>
+              git checkout -b branch_name
+            </pre>
+          </p>
+          <p>Make your changes.</p>
+          <p>Stage your changes for commit.
+            <pre>
+              git add file_name
+            </pre>
+          </p>
+          <p>Save changes.
+            <pre>
+              git commit -m "commit message"
+            </pre>
+          </p>
+          <p>Send changes to GitHub.
+            <pre>
+              git push origin branch_name
+            </pre>
+          </p>
+          <p>Merge changes on GitHub</p>
+          <p>Checkout master branch.
+            <pre>
+              git checkout master
+            </pre>
+          </p>
+          <p>Update local master branch.
+            <pre>
+              git pull origin master
+            </pre>
+          </p>
+          <p>Confirm that the local repository has been properly updated and the changes have been saved.</p>
+          <p>Delete the old feature branch.
+            <pre>
+              git branch -d branch_name
+            </pre>
+          </p>
+    </section>
+
+    <footer>
+      <h4><a href="index.html">Back</a></h4>
+    </footer>
+  </body>
+
+</html>
