@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+
+	body {
+	min-width: 0px;
+	margin: 6px;
+	margin-top: -7em !important;
+/*	padding-top: 0 !important;*/
+/*	padding-right: 100px !important;*/
+/*	width: 100% !important;*/
+/*	background-color: green !important;*/
+	}
+
+	#pics {
+		transform: scale(.7);
+/*		margin-left: -100px;*/
+/*		display: inline-block;*/
+/*		width: auto !important;*/
+/*		width: 520px !important;*/
+		position: relative !important;
+		margin-left: -125px !important;
+	}
+	
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+	
+	body {
+		margin-top: -12em !important;
+	}
+	
+	#pics {
+		transform: scale(.5);
+/*		margin-left: -100px;*/
+/*		display: inline-block;*/
+/*		width: auto !important;*/
+/*		width: 520px !important;*/
+		position: relative !important;
+		margin-left: -225px !important;
+	}
+	
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+	
+	body {
+/*		width: 100% !important;*/
+		margin-top: -210% !important;
+		margin-right: -40%;
+		padding-bottom: -200em;
+	}
+	
+	#pics {
+		transform: scale(.7);
+/*		margin:auto;*/
+		margin: 0px -15% !important;
+/*		margin-right: -200px !important;*/
+/*		display: block;*/
+		width: 100% !important;
+/*		width: 520px !important;*/
+/*
+		position: static !important;
+		margin-left: -225px !important;
+*/
+/*		float: left;*/
+	}
+	
+	img{
+		width: 100% !important;
+		height: auto !important;
+		display: block !important;
+		margin-top: 8px !important;
+	}
+	
+	#row1 {
+/*		z-index: 1;*/
+	}
+	
+	#pic1 {
+		margin-bottom: 0px !important;
+/*	background-color: aquamarine;*/
+	/*padding: 10em;*/
+	}
+
+	#row2 {
+		margin-top: -166px !important;
+/*		z-index: 2;*/
+	}
+
+	#pic4 {
+	/*	position: relative;*/
+	/*	z-index: -10;*/
+	/*	margin-bottom: 200px;*/
+		margin-left: 0px !important;
+/*		height: 200px !important;*/
+/*		width: 85px;*/
+	}
+
+	#pic5 {
+/*		margin-top: 0px;*/
+	}
+
+	#row3 {
+		margin-top: 0 !important;
+/*		z-index: 3;*/
+	}
+
+	#pic8 {
+		height: 425px;
+		width: 249px;
+	}
+	
+		
+}
